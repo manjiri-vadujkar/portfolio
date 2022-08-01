@@ -7,6 +7,13 @@
   --fs-nav: 1.5rem;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 .navbar-nav a {
   color: hsl(var(--white));
   font-size: var(--fs-nav);
@@ -14,9 +21,10 @@
 
 .mainDiv {
   position: relative;
-  max-height: 95vh;
+  max-height: 100vh;
   overflow: hidden;
 }
+
 .headings {
   position: absolute;
   top: 50%;
@@ -24,6 +32,12 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: hsl(var(--white));
+}
+
+.aboutMe {
+  margin: auto;
+  padding-top: 2rem;
+  max-width: 750px;
 }
 
 .row {

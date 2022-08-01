@@ -1,5 +1,9 @@
 import backgroundImg from "./Images/Coding2.jpeg";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 
 function App() {
@@ -7,9 +11,6 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
         <div className="container-fluid">
-          {/* <a className="navbar-brand" href="#">
-            Navbar
-          </a> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -46,11 +47,34 @@ function App() {
         </div>
       </div>
 
+      <div className="aboutMe">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="..." class="img-fluid rounded-start" alt="..."></img>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Frontend Mentor Projects</h5>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">An item</li>
                 <li class="list-group-item">A second item</li>
@@ -62,7 +86,7 @@ function App() {
         <div class="col">
           <div class="card h-100">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Personal</h5>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">An item</li>
                 <li class="list-group-item">A second item</li>
@@ -84,6 +108,39 @@ function App() {
           </div>
         </div>
       </div>
+
+      <footer class="text-center text-white">
+        <div class="container pt-4">
+          <section class="mb-4">
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </i>
+            </a>
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i>
+                <FontAwesomeIcon icon={faGithub} />
+              </i>
+            </a>
+          </section>
+        </div>
+        <div class="text-center text-dark p-3">
+          © 2022 Copyright:
+          <a class="text-dark" href="#">
+            Manjiri Vadujkar
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
