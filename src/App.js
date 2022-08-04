@@ -7,9 +7,13 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 
 function App() {
+  const handleScroll = (event) => {
+    console.log("offset: " + event.offset().top);
+  };
+
   return (
     <div className="App">
-      <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
+      <nav className="navbar navbar-dark navbar-expand-lg ">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -39,108 +43,118 @@ function App() {
         </div>
       </nav>
 
-      <div className="mainDiv">
-        <img src={backgroundImg} alt="Main" width="100%" max-height="90%"></img>
-        <div className="headings">
-          <h1> Manjiri Vadujkar</h1>
-          <h2> Web Developer </h2>
+      <div className="parallaxWrapper">
+        <div className="parallaxImg">
+          <div className="headings">
+            <h1> Manjiri Vadujkar</h1>
+            <h2> Web Developer </h2>
+            <a className="linkBtn" href="">
+              View My Work
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div className="aboutMe">
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="..." class="img-fluid rounded-start" alt="..."></img>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
+        <section className="personalInfo" onScroll={handleScroll}>
+          <div className="aboutMe">
+            <div className="card mb-3">
+              <div className="row g-0">
+                <div className="col-md-4">
+                  <img
+                    src="..."
+                    className="img-fluid rounded-start"
+                    alt="..."
+                  ></img>
+                </div>
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <h5 className="card-title">Card title</h5>
+                    <p className="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p className="card-text">
+                      <small className="text-muted">
+                        Last updated 3 mins ago
+                      </small>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Frontend Mentor Projects</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-              </ul>
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="col">
+              <div className="card h-100">
+                <div className="card-body">
+                  <h5 className="card-title">Frontend Mentor Projects</h5>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item">An item</li>
+                    <li className="list-group-item">A second item</li>
+                    <li className="list-group-item">A third item</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card h-100">
+                <div className="card-body">
+                  <h5 className="card-title">Personal</h5>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item">An item</li>
+                    <li className="list-group-item">A second item</li>
+                    <li className="list-group-item">A third item</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card h-100">
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item">An item</li>
+                    <li className="list-group-item">A second item</li>
+                    <li className="list-group-item">A third item</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Personal</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-              </ul>
-            </div>
+        </section>
+        <footer className="footer text-center text-white">
+          <div className="container pt-4">
+            <section className="mb-4">
+              <a
+                className="btn btn-link btn-floating btn-lg text-white m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="white"
+              >
+                <i>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </i>
+              </a>
+              <a
+                className="btn btn-link btn-floating btn-lg text-white m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+              >
+                <i>
+                  <FontAwesomeIcon icon={faGithub} />
+                </i>
+              </a>
+            </section>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-              </ul>
-            </div>
+          <div className="text-center text-white p-3">
+            © 2022 Copyright:
+            <a className="text-white" href="#">
+              Manjiri Vadujkar
+            </a>
           </div>
-        </div>
+        </footer>
       </div>
-
-      <footer class="text-center text-white">
-        <div class="container pt-4">
-          <section class="mb-4">
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i>
-                <FontAwesomeIcon icon={faLinkedin} />
-              </i>
-            </a>
-            <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i>
-                <FontAwesomeIcon icon={faGithub} />
-              </i>
-            </a>
-          </section>
-        </div>
-        <div class="text-center text-dark p-3">
-          © 2022 Copyright:
-          <a class="text-dark" href="#">
-            Manjiri Vadujkar
-          </a>
-        </div>
-      </footer>
     </div>
   );
 }
