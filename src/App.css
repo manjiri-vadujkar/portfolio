@@ -1,11 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap");
 :root {
   /* Colors*/
   --white: 0 100% 100%;
   --blue-8: 245 72% 22%;
 
-  /* Fonts */
+  /* Font Size */
   --fs-heading: 3rem;
   --fs-nav: 1.5rem;
+  --fs-listHeading: 1.5rem;
+
+  /* Font Family */
+  --ff-headings: "DM Sans", sans-serif;
+  --ff-body: "Montserrat", sans-serif;
+
+  /* Font weight */
+}
+
+body {
+  font-family: var(--ff-body);
+  font-weight: 400;
 }
 
 .navbar {
@@ -16,12 +29,25 @@
   z-index: 2;
 }
 
+.navbar-toggler:hover {
+  border: 2px solid white;
+}
+
 .navbar-nav a {
   color: hsl(var(--white));
   font-size: var(--fs-nav);
+  font-family: var(--ff-headings);
+  font-weight: 700;
+}
+
+.navbar-nav a:hover {
+  background-color: hsl(var(--white));
+  color: black;
 }
 
 .parallaxWrapper {
+  font-family: var(--ff-headings);
+  font-weight: 700;
   background-image: url("Images/bg1.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -57,13 +83,55 @@
   color: purple;
 }
 
-.aboutMe {
+.detailsCard {
   margin: auto;
   padding-top: 2rem;
   max-width: 750px;
 }
 
+.card-title {
+  font-size: var(--fs-listHeading);
+  font-family: var(--ff-headings);
+  font-weight: 700;
+}
+
 .row {
   margin: 3rem;
   padding: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding-bottom: 11px;
+  margin-bottom: 29px;
+  position: relative;
+}
+
+ul li span:first-child {
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.textHeading {
+  font-family: var(--ff-headings);
+  font-weight: 700;
+  font-size: var(--fs-listHeading);
+  margin-left: 1rem;
+}
+
+.text {
+  margin-left: 2.5rem;
+}
+.verticalLine {
+  position: absolute;
+  height: 90%;
+  margin: 1rem 0;
+  width: 1px;
+  border-left: 1px solid black;
+  left: 15px;
+  top: 23px;
 }
