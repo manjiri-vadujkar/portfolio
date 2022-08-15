@@ -134,7 +134,7 @@ body {
 }
 
 #timeline h5 {
-  border-bottom: 1px solid purple;
+  border-bottom: 2px solid purple;
 }
 
 .timeline-list {
@@ -166,7 +166,7 @@ footer {
     height: 95%;
     margin: calc(0.75rem + 0.5vw) 0;
     width: 1px;
-    border-left: 1px solid black;
+    border-left: 2px solid purple;
     left: 15px;
     top: 23px;
   }
@@ -179,8 +179,12 @@ footer {
 
   .timeline-list li span:first-child {
     border-radius: 50%;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 5px 10px;
+  }
+
+  .index {
+    color: purple;
   }
 }
 
