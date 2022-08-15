@@ -115,7 +115,7 @@ body {
 }
 
 .row {
-  margin: 3rem;
+  margin: 1rem;
   padding: 1rem;
 }
 
@@ -125,10 +125,6 @@ body {
   padding: 0.5rem;
   color: black;
 }
-
-/* .comming-soon {
-  pointer-events: none;
-} */
 
 /* Education & Experience Timeline */
 #timeline {
