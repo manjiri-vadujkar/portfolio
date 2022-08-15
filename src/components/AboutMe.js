@@ -23,7 +23,7 @@ export default function AboutMe() {
                 same by undertaking reputable courses and completing solo
                 projects to build a portfolio that showcases my knowledge and
                 eagerness to learn new concepts and technologies. <br />
-                In my past year at TCS, I have developed essential skills in
+                In my past year at TCS, I have developed essential skills like
                 collaboration, customer service, and critical thinking.
               </p>
             </div>
