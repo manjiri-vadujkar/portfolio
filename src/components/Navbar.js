@@ -26,7 +26,7 @@ export default function Navbar() {
             <a className="nav-link" href="#projects">
               My Projects
             </a>
-            <a className="nav-link" href="#education">
+            <a className="nav-link" href="#timeline">
               Education & Experience
             </a>
           </div>
