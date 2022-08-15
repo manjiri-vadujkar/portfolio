@@ -7,7 +7,7 @@ export default function Education() {
         <h5 className="card-title">Experience</h5>
         <ul className="timeline-list">
           <li>
-            <span>1</span>
+            <span className="index">1</span>
             <span className="textHeading">
               System Engineer
               <br />
@@ -19,7 +19,7 @@ export default function Education() {
             <div class="verticalLine"></div>
           </li>
           <li>
-            <span>2</span>
+            <span className="index">2</span>
             <span className="textHeading">
               Assistant System Engineer-Trainee
               <br />
@@ -34,7 +34,7 @@ export default function Education() {
         <h5 className="card-title">Education</h5>
         <ul className="timeline-list">
           <li>
-            <span>1</span>
+            <span className="index">1</span>
             <span className="textHeading">
               B.E Computer Engineering
               <br />
@@ -47,7 +47,7 @@ export default function Education() {
             <div class="verticalLine"></div>
           </li>
           <li>
-            <span>2</span>
+            <span className="index">2</span>
             <span className="textHeading">
               HSC
               <br />
