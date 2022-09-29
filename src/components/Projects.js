@@ -54,6 +54,11 @@ export default function Projects() {
                 </a>
               </li>
               <li className="list-group-item">
+                <a href="manjiri-vadujkar.github.io/rps-game/" target="__blank">
+                  Rock, Paper and Scissors Game
+                </a>
+              </li>
+              <li className="list-group-item">
                 <a
                   href="https://manjiri-vadujkar.github.io/RoboFriends/"
                   target="__blank"
