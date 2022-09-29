@@ -85,10 +85,10 @@ export default function Projects() {
               </li>
               <li className="list-group-item">
                 <a
-                  href="#projects"
-                  // target="__blank"
-                  className="comming-soon"
-                  onClick={disableLink}
+                  href="https://youtu.be/VvFZtYcM3kQ"
+                  target="__blank"
+                  //className="comming-soon"
+                  //onClick={disableLink}
                 >
                   Arogya: Ayurvedic Healthcare Webapp
                 </a>
