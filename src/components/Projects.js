@@ -87,13 +87,16 @@ export default function Projects() {
             <h5 className="card-title">Full Stack Projects</h5>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-                <a href="https://youtu.be/b_fCrDnkkwQ" target="__blank">
+                <a
+                  href="https://www.youtube.com/watch?v=b_fCrDnkkwQ"
+                  target="__blank"
+                >
                   Fables: An Audiobook App
                 </a>
               </li>
               <li className="list-group-item">
                 <a
-                  href="https://youtu.be/VvFZtYcM3kQ"
+                  href="https://www.youtube.com/watch?v=VvFZtYcM3kQ"
                   target="__blank"
                   //className="comming-soon"
                   //onClick={disableLink}
@@ -102,7 +105,10 @@ export default function Projects() {
                 </a>
               </li>
               <li className="list-group-item">
-                <a href="https://youtu.be/jZQslcyLXO8" target="__blank">
+                <a
+                  href="https://www.youtube.com/watch?v=jZQslcyLXO8"
+                  target="__blank"
+                >
                   Face Recognition Webapp
                 </a>
               </li>
